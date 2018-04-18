@@ -1,10 +1,10 @@
 #10 Lới khuyên giúp nâng kỹ năng Git của bạn lên tầm cao mới
 
-Gần đây, chúng tôi đã phát hành một vài hướng dẫn để giúp bạn làm quen với nền tảng Git và sử dụng Git trong môi trường làm việc nhóm. Các lệnh mà chúng ta đã thảo luận đủ để giúp một nhà phát triển tồn tại trong thế giới Git. Trong bài đăng này, chúng tôi sẽ cố gắng tìm hiểu cách quản lý thời gian một cách hiệu quả và tận dụng các tính năng mà Git cung cấp..
+Gần đây, chúng tôi đã xuất bản một vài hướng dẫn để giúp bạn làm quen với Git cơ bản và sử dụng Git trong môi trường làm việc nhóm. Các lệnh mà chúng ta đã thảo luận đủ để giúp một nhà phát triển tồn tại trong thế giới Git. Trong bài đăng này, chúng tôi sẽ cố gắng tìm hiểu cách quản lý thời gian một cách hiệu quả và tận dụng các tính năng mà Git cung cấp..
 
 Lưu ý: Một số lệnh trong bài viết này bao gồm một phần của lệnh trong dấu ngoặc vuông (ví dụ: git add -p [file_name]). Trong những ví dụ này, bạn sẽ chèn thêm số cần thiết,định danh, vân vân mà không có dấu ngoặc vuông.
 
-##1. Git tự hoàn thiện
+##1. Tự động hoàn thành lệnh Git
 
 Nếu bạn chạy lệnh Git thông qua dòng lệnh, đó là một công việc mệt mỏi mỗi lần gõ các lệnh bằng tay. Để giúp đỡ việc này, bạn có thể tự động hoàn thành lệnh Git trong vòng vài phút.
 
@@ -70,7 +70,7 @@ Hãy nói rằng bạn đã commit một điều gì đó mà bạn không muố
 
 Một ```git log``` đơn giản cho bạn thấy commit mới nhất, cha của nó, cha của cha nó, vân vân. Tuy nhiên, ```git reflog``` là một danh sách các commit mà head trỏ đến. Hãy nhớ rằng nó là local trong hệ thống của bạn; nó không phải là một phần trong repository của bạn và không bao gồm trong push hoặc merge.
 
-Nếu tôi chạy ```git log```, tôi nhận được các commiy là một phần của repository của tôi:
+Nếu tôi chạy ```git log```, tôi nhận được các commit là một phần của repository của tôi:
 
 ![ahihi](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/06/1402946446git-ninja-04.png)
 
@@ -106,7 +106,7 @@ Có vẻ như Git cho rằng tất cả những thay đổi đều là một ph�
 * Nhập d để thoát hoặc đi tới file tiếp theo.
 * Nhập s để chia khối.
 
-Trong trường hợp của chúng tôi, chúng tôi chắc chắn muốn chia nhỏ nó thành các phần nhỏ hơn để bổ sung có chọn lọc và bỏ qua phần còn lại.
+Trong trường hợp này của chúng ta, chúng ta chắc chắn muốn chia nhỏ nó thành các phần nhỏ hơn để bổ sung có chọn lọc và bỏ qua phần còn lại.
 
 ![ahihi](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/06/1402946452git-ninja-08.png)
 
@@ -149,7 +149,7 @@ git stash
 
 ```
 
-Để kiểm tra danh sách các stashe, bạn có thể chạy như sau:
+Để kiểm tra danh sách các stash, bạn có thể chạy như sau:
 
 ```
 
