@@ -39,7 +39,7 @@ my_db_config/
 
 ##3. Ai làm lỗi code của tôi?
 
-Đó là bản năng tự nhiên của con người để đổ lỗi cho người khác khi có điều gì đó không ổn. Nếu máy chủ sản xuất của bạn bị hỏng, rất dễ để tìm ra thủ phạm - chỉ cần thực hiện một ```git blame```. Lệnh này cho bạn thấy tác giả của mỗi dòng trong một file, commit thay đổi cuối cùng trong dòng đó và mốc thời gian của commit.
+Đó là bản năng tự nhiên của con người để đổ lỗi cho người khác khi có điều gì đó không ổn. Nếu máy chủ đang chạy của bạn bị hỏng, rất dễ để tìm ra thủ phạm - chỉ cần thực hiện một ```git blame```. Lệnh này cho bạn thấy tác giả của mỗi dòng trong một file, commit thay đổi cuối cùng trong dòng đó và mốc thời gian của commit.
 
 ```
 git blame [file_name]
@@ -80,7 +80,7 @@ Tuy nhiên, ```git reflog``` cho thấy một commit (```b1b0ee9 - HEAD @ {4} ``
 
 ##6. Phân loại các phần của một file đã thay đổi cho một commit
 
-Nói chung, cách làm tốt là tạo commit dựa trên tính năng, nghĩa là mỗi commit phải đại diện cho một tính năng hoặc sửa lỗi. Hãy xem xét điều gì sẽ xảy ra nếu bạn cố định hai lỗi hoặc thêm nhiều tính năng mà không commit sự thay đổi. Trong trường hợp tình huống như vậy, bạn có thể đặt những thay đổi trong một commit duy nhất. Nhưng có một cách tốt hơn: Stage các file riêng lẻ và commit chúng một cách riêng lẻ.
+Nói chung, cách làm tốt là tạo commit dựa trên tính năng, nghĩa là mỗi commit phải đại diện cho một tính năng hoặc sửa lỗi. Hãy xem xét điều gì sẽ xảy ra nếu bạn cố định hai lỗi hoặc thêm nhiều tính năng mà không commit sự thay đổi. Trong trường hợp tình huống như vậy, bạn có thể đặt những thay đổi trong một commit duy nhất. Nhưng có một cách tốt hơn: Phân loại các file riêng lẻ và commit chúng một cách riêng lẻ.
 
 Giả sử bạn đã thực hiện nhiều thay đổi cho một file và muốn chúng xuất hiện trong các commit riêng biệt. Trong trường hợp đó, chúng ta thêm các file bằng tiền tố ```-p``` vào các lệnh thêm của chúng ta.
 
@@ -132,7 +132,7 @@ git rebase -i HEAD~2
 
 ```
 
-Khi chạy lệnh này, bạn sẽ được đưa đến một giao diện tương tác liệt kê các commit và sẽ hỏi bạn chọn cái nào để squash. Lý tưởng nhất là bạn ```pick``` các commit mới nhất và```squash``` những cái cũ.
+Khi chạy lệnh này, bạn sẽ được đưa đến một giao diện tương tác liệt kê các commit và sẽ hỏi bạn chọn cái nào để squash. Lý tưởng nhất là bạn ```chọn``` các commit mới nhất và```squash``` những cái cũ.
 
 ![ahihi](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/06/1402946455git-ninja-10.png)
 
